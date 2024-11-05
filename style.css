@@ -21,6 +21,7 @@ body {
   flex-direction: column;
   font-size: 1.6rem;
   padding: 2rem;
+  font-family: "Roboto Flex", sans-serif;
 }
 
 main {
