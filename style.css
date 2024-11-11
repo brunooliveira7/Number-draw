@@ -26,6 +26,7 @@ body {
 
 main {
   max-width: 39rem;
+  padding: 3.5rem;
 }
 
 .title-header {
@@ -77,6 +78,7 @@ header h2 {
   font-weight: 700;
   line-height: 150%;
   text-transform: uppercase;
+  margin-bottom: 0.2rem;
 }
 
 .explanation p {
@@ -86,4 +88,26 @@ header h2 {
   font-weight: 500;
   line-height: 150%;
   margin-bottom: 4rem;
+}
+
+.inputs-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+fieldset label {
+  color: #C7C9CC;
+  text-transform: uppercase;
+}
+
+fieldset input {
+  max-width: 8.6rem;
+  height: 8.6rem;
 }
