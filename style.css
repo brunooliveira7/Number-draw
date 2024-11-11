@@ -92,7 +92,7 @@ header h2 {
 
 .inputs-row {
   display: flex;
-  justify-content: space-between;
+  gap: 1rem;
 }
 
 fieldset {
@@ -103,11 +103,27 @@ fieldset {
 }
 
 fieldset label {
-  color: #C7C9CC;
+  color: #c7c9cc;
+  text-align: center;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 700;
+  line-height: 150%;
   text-transform: uppercase;
 }
 
-fieldset input {
-  max-width: 8.6rem;
-  height: 8.6rem;
+.inputs-row fieldset input {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 0.25rem 0.5rem;
+
+  border: 1px solid #111012;
+  background: #111012;
+  outline: none;
+
+  color: #fff;
+  text-align: center;
+  font-family: "Sora", sans-serif;
+  font-size: 3.1rem;
+  font-weight: 700;
 }
