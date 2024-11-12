@@ -1,7 +1,7 @@
-<h1 align="center"> Refund </h1>
+<h1 align="center"> Number-draw </h1>
 
 <p align="center">
-. Site disponível em: https://brunooliveira7.github.io/Number-draw
+Number-draw é um sorteador de números projetado para fornecer uma interface intuitiva e eficiente para gerar números aleatórios com facilidade. Site disponível em: https://brunooliveira7.github.io/Number-draw
 </p>
 
 <p align="center">
@@ -27,7 +27,7 @@ Projeto desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-.
+Pode ser usado como sorteador em jogos ou sorteios personalizados, destacando-se como uma ferramenta prática e confiável.
 
 ## 🔖 Layout
 
