@@ -111,12 +111,17 @@ fieldset label {
   text-transform: uppercase;
 }
 
+.inputs-row {
+  margin-bottom: 1.25rem;
+}
+
 .inputs-row fieldset input {
   width: 100%;
-  height: auto;
+  height: 6rem;
   display: flex;
   padding: 0.25rem 0.5rem;
 
+  border-radius: 0.5rem;
   border: 1px solid #111012;
   background: #111012;
   outline: none;
@@ -126,4 +131,35 @@ fieldset label {
   font-family: "Sora", sans-serif;
   font-size: 3.1rem;
   font-weight: 700;
+}
+
+#switch {
+  position: relative;
+  width: 3.5rem;
+  margin-bottom: 4rem;
+}
+
+#switch button {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #fff;
+  border: none;
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.06));
+  border-radius: 50%;
+
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  margin: 0 3px;
+}
+
+#switch span {
+  display: block;
+  width: 3.5rem;
+  height: 2.1rem;
+  padding: 1rem;
+  border-radius: 1.6rem;
+  background: linear-gradient(91deg, #D586E0 0%, #91A1FA 98.93%);
 }
