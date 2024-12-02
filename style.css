@@ -18,7 +18,7 @@ body {
       rgba(0, 0, 0, 0.54) 100%
     ),
     url("./assets/background.png") no-repeat center center rgba(0, 0, 0, 0.889);
-
+  background-size: cover;
   color: #fff;
   display: flex;
   align-items: center;
@@ -31,6 +31,7 @@ body {
 
 main {
   max-width: 39rem;
+  max-height: 88rem;
   padding: 3.5rem;
 }
 
@@ -75,7 +76,7 @@ header h2 {
   line-height: 130%;
   letter-spacing: -1.6px;
   text-transform: uppercase;
-  margin-bottom: 4.2rem;
+  margin-bottom: 4rem;
 }
 
 .explanation h3 {
@@ -92,7 +93,7 @@ header h2 {
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .inputs-row {
@@ -206,7 +207,7 @@ fieldset label {
   font-weight: 700;
   line-height: 150%;
   text-transform: uppercase;
-  margin-bottom: 8rem;
+  margin-bottom: 6rem;
 }
 
 aside .title {
