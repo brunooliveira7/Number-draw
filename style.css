@@ -139,6 +139,36 @@ fieldset label {
   font-weight: 700;
 }
 
+.inputs-row fieldset input:hover {
+  border-radius: 0.8rem;
+  border: 1px solid transparent;
+  border-image: linear-gradient(
+      to right,
+      #77c0af,
+      #d1dc97,
+      #e9a9b3,
+      #d586e0,
+      #91a1fa
+    )
+    1;
+  background: #24222e;
+}
+
+.inputs-row fieldset input:focus {
+  border-radius: 0.8rem;
+  border: 2px solid transparent;
+  border-image: linear-gradient(
+      to right,
+      #77c0af,
+      #d1dc97,
+      #e9a9b3,
+      #d586e0,
+      #91a1fa
+    )
+    1;
+  background: #24222e;
+}
+
 #repeat {
   display: flex;
 }
@@ -187,7 +217,7 @@ fieldset label {
   background: linear-gradient(91deg, #d586e0 0%, #91a1fa 98.93%);
 }
 
-.draw {
+button.draw {
   display: flex;
   width: 100%;
   height: 5.6rem;
@@ -208,6 +238,21 @@ fieldset label {
   line-height: 150%;
   text-transform: uppercase;
   margin-bottom: 6rem;
+}
+
+button.draw:hover {
+  border-radius: 0.8rem;
+  border: 1.6px solid transparent;
+  border-image: linear-gradient(
+      to right,
+      #77c0af,
+      #d1dc97,
+      #e9a9b3,
+      #d586e0,
+      #91a1fa
+    )
+    1;
+  background: #24222e;
 }
 
 aside .title {
