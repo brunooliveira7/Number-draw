@@ -281,7 +281,7 @@ aside .explanation p {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 2fr 1fr;
     max-width: 100rem;
-    column-gap: 15rem;
+    column-gap: 10rem;
   }
 
   .title-header {
