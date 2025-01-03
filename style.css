@@ -118,7 +118,7 @@ fieldset label {
 }
 
 .inputs-row {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
 }
 
 .inputs-row fieldset input {
@@ -273,4 +273,44 @@ aside .explanation p {
   font-weight: 500;
   line-height: 150%;
   margin-left: 30px;
+}
+
+@media (min-width: 1024px) {
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    max-width: 100rem;
+    column-gap: 10rem;
+  }
+
+  .title-header {
+    justify-content: flex-start;
+    margin-bottom: 9rem;
+  }
+
+  header {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  header h2 {
+    font-size: 6rem;
+    font-weight: 800;
+    line-height: 130%; 
+    letter-spacing: -2.88px;
+  }
+
+  form {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    margin-top: -21rem;
+    min-width: 42rem;
+  }
+
+  aside {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    max-width: 39rem;
+  }
 }
