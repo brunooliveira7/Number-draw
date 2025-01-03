@@ -217,6 +217,32 @@ fieldset label {
   background: linear-gradient(91deg, #d586e0 0%, #91a1fa 98.93%);
 }
 
+#switch button.deactivated {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #fff;
+  border: none;
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.06));
+  border-radius: 50%;
+
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  margin: 0 3px;
+  cursor: pointer;
+}
+
+#switch span.deactivated {
+  display: block;
+  width: 3.5rem;
+  height: 2.1rem;
+  padding: 1rem;
+  border-radius: 1.6rem;
+  background: #D9D9D9;
+}
+
 button.draw {
   display: flex;
   width: 100%;
