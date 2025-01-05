@@ -15,7 +15,7 @@ Number-draw é um sorteador de números projetado para fornecer uma interface in
 </p>
 
 <p align="center">
-  <img alt="License" src="https://github.com/brunooliveira7/Number-draw/blob/main/assets/Layout%20-%20Number%20draw2.png">
+  <img alt="License" src="">
 </p>
 
 
