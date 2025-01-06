@@ -41,71 +41,75 @@
           de números
         </h2>
       </header>
-        <form class="">
-          <div class="explanation">
-            <h3>Quero sortear:</h3>
-            <p>
-              Defina o intervalo e a quantidade de números, clique em "Sortear"
-              e veja os resultados na tela. É rápido e fácil!
-            </p>
+      <form class="">
+        <div class="explanation">
+          <h3>Quero sortear:</h3>
+          <p>
+            Defina o intervalo e a quantidade de números, clique em "Sortear" e
+            veja os resultados na tela. É rápido e fácil!
+          </p>
+        </div>
+        <div class="inputs-row">
+          <fieldset>
+            <label for="quantity">Números</label>
+            <input type="number" id="quantity" name="quantity" required />
+          </fieldset>
+          <fieldset>
+            <label for="start">De</label>
+            <input type="number" id="start" name="start" required />
+          </fieldset>
+          <fieldset>
+            <label for="end">Até</label>
+            <input type="number" id="end" name="end" required />
+          </fieldset>
+        </div>
+        <div id="repeat">
+          <div id="switch">
+            <button class=""></button>
+            <span class=""></span>
           </div>
-          <div class="inputs-row">
-            <fieldset>
-              <label for="quantity">Números</label>
-              <input type="number" id="quantity" name="quantity" required />
-            </fieldset>
-            <fieldset>
-              <label for="start">De</label>
-              <input type="number" id="start" name="start" required />
-            </fieldset>
-            <fieldset>
-              <label for="end">Até</label>
-              <input type="number" id="end" name="end" required />
-            </fieldset>
-          </div>
-          <div id="repeat">
-            <div id="switch">
-              <button class=""></button>
-              <span class=""></span>
-            </div>
-            <p>Não repetir número</p>
-          </div>
-          <button class="raffle">Sortear <img src="./assets/arrow.svg" alt="" /></button>
-        </form>
-      
-        <div class="result hidden">
+          <p>Não repetir número</p>
+        </div>
+        <button class="raffle">
+          Sortear <img src="./assets/arrow.svg" alt="" />
+        </button>
+      </form>
+
+      <div class="result hidden">
+        <!--
           <h4>Resultado do sorteio</h4>
           <p>1º resultado</p>
           <span>23 12</span>
           <button class="again">Sortear <img src="./assets/again.svg" alt="" /></button>
-        </div>
+        -->
+      </div>
 
-        <aside>
-          <div class="explanation">
-            <div class="title">
-              <img src="./assets/user.svg" alt="" />
-              <h4>Como funciona o sorteador de números?</h4>
-            </div>
-            <div>
-              <p>
-                O sorteador utiliza um algoritmo de geração aleatória para criar
-                números dentro do intervalo especificado pelo usuário.
-              </p>
-            </div>
+      <aside>
+        <div class="explanation">
+          <div class="title">
+            <img src="./assets/user.svg" alt="" />
+            <h4>Como funciona o sorteador de números?</h4>
           </div>
-          <div class="explanation">
-            <div class="title">
-              <img src="./assets/user.svg" alt="" />
-              <h4>Posso escolher o intervalo dos números?</h4>
-            </div>
-            <div>
-              <p>
-                Sim, você pode definir os valores mínimo e máximo para o
-                intervalo dos números sorteados.
-              </p>
-            </div>
+          <div>
+            <p>
+              O sorteador utiliza um algoritmo de geração aleatória para criar
+              números dentro do intervalo especificado pelo usuário.
+            </p>
           </div>
-        </aside>
+        </div>
+        <div class="explanation">
+          <div class="title">
+            <img src="./assets/user.svg" alt="" />
+            <h4>Posso escolher o intervalo dos números?</h4>
+          </div>
+          <div>
+            <p>
+              Sim, você pode definir os valores mínimo e máximo para o intervalo
+              dos números sorteados.
+            </p>
+          </div>
+        </div>
+      </aside>
     </main>
   </body>
 </html>
