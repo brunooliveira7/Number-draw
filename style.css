@@ -313,6 +313,7 @@ button.raffle:hover {
   display: flex;
   justify-content: center;
   gap: 5rem;
+  flex-wrap: wrap;
 }
 
 .result div span {
@@ -323,6 +324,7 @@ button.raffle:hover {
   line-height: 150%;
   text-transform: uppercase;
   padding: 1.8rem 2.2rem;
+  max-width: 39rem;
 }
 
 .result button {
