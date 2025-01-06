@@ -104,7 +104,8 @@ function clearInput() {
   end.value = "";
 }
 
-function toggleSwitch() {
+function toggleSwitch(event) {
+  event.preventDefault();
   const spanSwitch = document.querySelector(".spanSwitch");
 
   btnSwitch.classList.toggle("deactivated");
