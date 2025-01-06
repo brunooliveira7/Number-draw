@@ -15,9 +15,15 @@ function handleRaffle(event) {
   const startValue = Number(start.value);
   const endValue = Number(end.value);
 
-  // Verificar se a quantidade solicitada é maior que o range disponível
+  // verificar se a quantidade solicitada é maior que o range disponível
   if (quantityValue > (endValue - startValue + 1)) {
     alert("A quantidade de números solicitada é maior que o intervalo disponível!");
+    return;
+  }
+
+  // verifica se o input está vazio
+  if (quantityValue === 0 || startValue === 0 || endValue === 0) {
+    alert("Por favor, preencha todos os campos!");
     return;
   }
 
