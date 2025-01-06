@@ -13,15 +13,26 @@ raffle.addEventListener("click", (event) => {
   const startValue = Number(start.value);
   const endValue = Number(end.value);
 
-  const drawnNumber =
-    Math.floor(Math.random() * (endValue - startValue + 1)) + startValue;
+  //limpar o resultado anterior
+  result.innerHTML = "";
 
   const title = document.createElement("h4");
   title.textContent = "Resultado do sorteio";
+  result.appendChild(title);
   const subtitle = document.createElement("p");
   subtitle.textContent = "1º resultado";
-  const resultContainer = document.createElement("span");
-  resultContainer.textContent = drawnNumber;
+
+  //gerar números sorteados
+  for (let i = 0; i < quantityValue; i++) {
+    const drawnNumber =
+      Math.floor(Math.random() * (endValue - startValue + 1)) + startValue;
+
+    const resultContainer = document.createElement("span");
+    resultContainer.textContent = drawnNumber;
+
+    result.appendChild(subtitle);
+    result.appendChild(resultContainer);
+  }
 
   const buttonAgain = document.createElement("button");
   const img = document.createElement("img");
@@ -29,14 +40,6 @@ raffle.addEventListener("click", (event) => {
   buttonAgain.classList.add("again");
   buttonAgain.textContent = "Sortear novamente";
   buttonAgain.appendChild(img);
-
-  //limpar o resultado anterior
-  result.innerHTML = "";
-
-  //adicionar o resultado
-  result.appendChild(title);
-  result.appendChild(subtitle);
-  result.appendChild(resultContainer);
   result.appendChild(buttonAgain);
 
   //voltar para a tela inicial
@@ -50,8 +53,6 @@ raffle.addEventListener("click", (event) => {
   //limpar os inputs
   clearInput();
 });
-
-function randomNumber() {}
 
 function toggleScreen() {
   form.classList.toggle("hidden");
