@@ -15,6 +15,12 @@ function handleRaffle(event) {
   const startValue = Number(start.value);
   const endValue = Number(end.value);
 
+  // Verificar se a quantidade solicitada é maior que o range disponível
+  if (quantityValue > (endValue - startValue + 1)) {
+    alert("A quantidade de números solicitada é maior que o intervalo disponível!");
+    return;
+  }
+
   resetResult();
   renderTitle();
   renderSubtitle(quantityValue);
@@ -43,11 +49,19 @@ function renderSubtitle() {
 function renderDrawnNumbers(quantityValue, startValue, endValue) {
   const numberContainer = document.createElement("div");
   result.appendChild(numberContainer);
-
-  for (let i = 0; i < quantityValue; i++) {
-    const drawnNumber = generateRandomNumber(startValue, endValue);
-    const resultContainer = createNumberSpan(drawnNumber);
-    numberContainer.appendChild(resultContainer);
+  
+  // Criar um Set para armazenar números já sorteados
+  const drawnNumbers = new Set();
+  
+  // Continuar sorteando até atingir a quantidade desejada
+  while (drawnNumbers.size < quantityValue) {
+    const newNumber = generateRandomNumber(startValue, endValue);
+    // Só adiciona se o número ainda não foi sorteado
+    if (!drawnNumbers.has(newNumber)) {
+      drawnNumbers.add(newNumber);
+      const resultContainer = createNumberSpan(newNumber);
+      numberContainer.appendChild(resultContainer);
+    }
   }
 }
 
