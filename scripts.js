@@ -56,13 +56,13 @@ function renderDrawnNumbers(quantityValue, startValue, endValue) {
   const numberContainer = document.createElement("div");
   result.appendChild(numberContainer);
   
-  // Criar um Set para armazenar números já sorteados
+  // criar um Set para armazenar números já sorteados
   const drawnNumbers = new Set();
   
-  // Continuar sorteando até atingir a quantidade desejada
+  // continuar sorteando até atingir a quantidade desejada
   while (drawnNumbers.size < quantityValue) {
     const newNumber = generateRandomNumber(startValue, endValue);
-    // Só adiciona se o número ainda não foi sorteado
+    // só adiciona se o número ainda não foi sorteado - evita repetir números
     if (!drawnNumbers.has(newNumber)) {
       drawnNumbers.add(newNumber);
       const resultContainer = createNumberSpan(newNumber);
