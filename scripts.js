@@ -30,17 +30,24 @@ raffle.addEventListener("click", (event) => {
   buttonAgain.textContent = "Sortear novamente";
   buttonAgain.appendChild(img);
 
+  //limpar o resultado anterior
+  result.innerHTML = "";
+
+  //adicionar o resultado
   result.appendChild(title);
   result.appendChild(subtitle);
   result.appendChild(resultContainer);
   result.appendChild(buttonAgain);
 
+  //voltar para a tela inicial
   toggleScreen();
   buttonAgain.addEventListener("click", () => {
     buttonAgain.classList.add("hidden");
     result.classList.add("hidden");
     form.classList.remove("hidden");
   });
+
+  //limpar os inputs
   clearInput();
 });
 
