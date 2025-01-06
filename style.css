@@ -308,16 +308,21 @@ button.raffle:hover {
   margin-bottom: 4rem;
 }
 
-.result span {
+.result div {
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.result div span {
   color: #c58de7;
   font-family: "Roboto Mono";
   font-size: 4.8rem;
   font-weight: 700;
   line-height: 150%;
   text-transform: uppercase;
-
   padding: 1.8rem 2.2rem;
-  margin-bottom: 4rem;
 }
 
 .result button {

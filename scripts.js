@@ -19,8 +19,13 @@ raffle.addEventListener("click", (event) => {
   const title = document.createElement("h4");
   title.textContent = "Resultado do sorteio";
   result.appendChild(title);
+
   const subtitle = document.createElement("p");
   subtitle.textContent = "1º resultado";
+  result.appendChild(subtitle);
+
+  const numberContainer = document.createElement("div");
+  result.appendChild(numberContainer);
 
   //gerar números sorteados
   for (let i = 0; i < quantityValue; i++) {
@@ -29,11 +34,10 @@ raffle.addEventListener("click", (event) => {
 
     const resultContainer = document.createElement("span");
     resultContainer.textContent = drawnNumber;
-
-    result.appendChild(subtitle);
-    result.appendChild(resultContainer);
+    numberContainer.appendChild(resultContainer);
   }
 
+  //adicionar botão para sortear novamente
   const buttonAgain = document.createElement("button");
   const img = document.createElement("img");
   img.setAttribute("src", "./assets/again.svg");
