@@ -53,10 +53,11 @@ function renderSubtitle() {
 }
 
 function renderDrawnNumbers(quantityValue, startValue, endValue) {
+  // div que contém os spans com os números sorteados
   const numberContainer = document.createElement("div");
   result.appendChild(numberContainer);
   
-  // criar um Set para armazenar números já sorteados
+  // criar um Set (não aceita números repetidos) para armazenar números já sorteados
   const drawnNumbers = new Set();
   
   // continuar sorteando até atingir a quantidade desejada
